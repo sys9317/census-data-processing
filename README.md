@@ -208,19 +208,6 @@ count if dup > 0
 
 ---
 
-## Bugs Fixed
-
-The original code contained **10 major bugs** including:
-- Deprecated regex functions (crashed in Stata 15+)
-- Logic errors in classification (student group thresholds reversed)
-- Incomplete HTML tag removal (only removed first tag, not all)
-- Complete failure of student-level extraction (0 records extracted)
-- Missing data validation
-
-See [`BUGS_FIXED.md`](./BUGS_FIXED.md) for complete documentation of all issues and fixes.
-
----
-
 ## Next Steps & Extensions
 
 ### Potential Analyses
@@ -258,7 +245,7 @@ See [`BUGS_FIXED.md`](./BUGS_FIXED.md) for complete documentation of all issues 
 
 **Author:** Yosup Shin  
 **GitHub:** [sys9317](https://github.com/sys9317)  
-**Context:** Developed for PPOL 6818 (Experimental Design) at Georgetown University
+**Context:** Developed for Experimental Design course and Georgetown University Initiative on Innovation, Development and Evaluation 
 
 ---
 
