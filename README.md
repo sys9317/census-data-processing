@@ -50,16 +50,13 @@ These skills are essential for researchers working on education, public health, 
 
 ```
 census-data-processing/
-├── census_data_processing.do      # Main Stata script
-├── BUGS_FIXED.md                  # Detailed documentation of all fixes
-├── data/
+├── census_data_processing.do      # Main Stata script (fully commented)
+├── data/                          # Input files, not tracked (see Getting Started)
 │   ├── q4_Pakistan_district_table21.xlsx
 │   └── q5_Tz_student_roster_html.dta
-├── output/
-│   ├── pakistan_district_census_clean.dta
-│   └── tanzania_student_exams_clean.dta
-├── logs/
-│   └── census_processing_[date].log
+├── output/                        # Cleaned .dta files, generated at runtime
+├── logs/                          # Run logs, generated at runtime
+├── LICENSE
 └── README.md
 ```
 
@@ -160,7 +157,7 @@ This script uses **Stata 14+ Unicode regex functions:**
 - `ustrregexs()` for capture groups
 - `ustrregexra()` for replace-all operations
 
-If you're using Stata 13 or earlier, you'll need to revert to the older functions (see `BUGS_FIXED.md` for details).
+If you're using Stata 13 or earlier, you'll need to revert to the older functions (the inline comments flag each spot).
 
 ### Key Techniques Demonstrated
 
